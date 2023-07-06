@@ -2,6 +2,7 @@ import './css/style.css'
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import Theme from './theme-provider'
+import Header from '@/components/ui/header'
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -36,12 +37,18 @@ export default function RootLayout({ children }) {
 				<Theme>
 					<div className="max-w-7xl mx-auto">
 						<div className="min-h-screen flex">
+
 							{ /* Main content */}
 							<main className="grow overflow-hidden px-6">
-								<div className="w-full h-full max-w-[1072px] mx-auto flex flex-col">
+								<div className="w-full h-full mx-auto flex flex-col">
+
+									<Header />
+
 									{children}
+
 								</div>
 							</main>
+
 						</div>
 					</div>
 				</Theme>
