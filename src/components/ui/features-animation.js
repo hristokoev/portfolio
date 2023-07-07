@@ -80,6 +80,7 @@ export default function FeaturesAnimation() {
 								<path d="M32 16h-8a8 8 0 10-16 0H0C0 7.163 7.163 0 16 0s16 7.163 16 16z" fill="url(#logo_a)" />
 								<path d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16h8a8 8 0 1016 0h8z" fill="url(#logo_b)" />
 							</svg>
+
 							{/* Side gradients */}
 							<div className="absolute top-0 bottom-0 left-0 w-20 bg-gradient-to-r from-white dark:from-slate-900" aria-hidden="true"></div>
 							<div className="absolute top-0 bottom-0 right-0 w-20 bg-gradient-to-l from-white dark:from-slate-900" aria-hidden="true"></div>
