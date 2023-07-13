@@ -10,13 +10,13 @@ export default function Header() {
 					{/* Links */}
 					<div>
 						<Link className="btn-sm text-slate-700 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-300" href="/">
-							Projects
+							Home
 						</Link>
 					</div>
 
 					<div>
-						<Link className="btn-sm text-slate-700 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-300" href="/">
-							Contacts
+						<Link className="btn-sm text-slate-700 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-300" href="/projects">
+							Projects
 						</Link>
 					</div>
 
