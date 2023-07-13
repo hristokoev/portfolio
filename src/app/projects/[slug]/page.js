@@ -12,7 +12,7 @@ const getProjectContent = (slug) => {
 }
 
 export const metadata = {
-	title: getProjectMetadata().map((project) => project.title).join(', '),
+	title: "Projects - " + getProjectMetadata().map((project) => project.title).join(', '),
 	description: getProjectMetadata().map((project) => project.subtitle).join(', '),
 }
 

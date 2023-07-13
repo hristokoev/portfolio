@@ -15,7 +15,7 @@ export default function Projects() {
 
 			<div className="grow">
 
-				<h1 className="h1 font-aspekta mb-12">Stuff I've made</h1>
+				<h1 className="h1 font-aspekta mb-12">Stuff I&apos;ve made</h1>
 
 				<div className="space-y-10">
 						

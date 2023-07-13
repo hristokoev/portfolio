@@ -7,7 +7,7 @@ import getProjectMetadata from '@/components/getProjectMetadata';
 import ProjectPreview from '@/components/projects/preview';
 
 export const metadata = {
-	title: 'Hristo Koev',
+	title: 'Hristo Koev - Web Developer & Motion Graphics Artist',
 	description: 'A Web Developer based in Prague',
 }
 
