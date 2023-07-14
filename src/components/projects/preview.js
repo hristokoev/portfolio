@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -16,11 +18,11 @@ export default function ProjectCard(item) {
 					</div>
 					<div className="text-lg font-aspekta font-[650] mb-1">{item.title}</div>
 					<p className="text-sm text-slate-500 dark:text-slate-400 mb-2">{item.subtitle}</p>
-				<div className="text-sky-500 flex justify-end">
-					<svg className="fill-current -rotate-45 group-hover:rotate-0 transition-transform ease-out" xmlns="http://www.w3.org/2000/svg" width="14" height="12">
-						<path d="M9.586 5 6.293 1.707 7.707.293 13.414 6l-5.707 5.707-1.414-1.414L9.586 7H0V5h9.586Z" />
-					</svg>
-				</div>
+					<div className="text-sky-500 flex justify-end">
+						<svg className="fill-current -rotate-45 group-hover:rotate-0 transition-transform ease-out" xmlns="http://www.w3.org/2000/svg" width="14" height="12">
+							<path d="M9.586 5 6.293 1.707 7.707.293 13.414 6l-5.707 5.707-1.414-1.414L9.586 7H0V5h9.586Z" />
+						</svg>
+					</div>
 				</div>
 			</div>
 		</Link>

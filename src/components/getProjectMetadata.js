@@ -17,6 +17,7 @@ const getProjectMetadata = () => {
 			thumb: matterResult.data.thumb,
 			slug: markdownProject.replace('.md', ''),
 			openSource: matterResult.data.openSource,
+			tags: matterResult.data.tags,
 		}
 	});
 
