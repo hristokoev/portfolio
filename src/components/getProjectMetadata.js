@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 const getProjectMetadata = () => {
 	const folder = 'src/projects/';
 	const files = fs.readdirSync(folder);
-	const markdownProjects = files.filter(file => file.endsWith('.md'));
+	const markdownProjects = files.filter((file) => file.endsWith('.md'));
 
 	const projects = markdownProjects.map((markdownProject) => {
 		const fileContents = fs.readFileSync(`${folder}${markdownProject}`, 'utf8');
@@ -16,6 +16,7 @@ const getProjectMetadata = () => {
 			icon: matterResult.data.icon,
 			thumb: matterResult.data.thumb,
 			slug: markdownProject.replace('.md', ''),
+			openSource: matterResult.data.openSource,
 		}
 	});
 

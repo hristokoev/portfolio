@@ -1,8 +1,9 @@
 ---
 title: "Pretty OSCAR"
 subtitle: "Chrome Extension for Amadeus (OSCAR) - a tool used by CRM agents to book flights, see flight history, etc."
-date: "2020-12-27"
+date: "2023-05-18"
 thumb: "/images/pretty-oscar/thumb.jpg"
+openSource: true
 ---
 
 ```
