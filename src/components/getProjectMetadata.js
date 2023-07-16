@@ -6,6 +6,17 @@ const getProjectMetadata = () => {
 	const files = fs.readdirSync(folder);
 	const markdownProjects = files.filter((file) => file.endsWith('.md'));
 
+	// Filter by URL parameter, for example /projects?tag=nextjs
+	// if (tag) {
+	// 	markdownProjects = markdownProjects.filter((project) => {
+	// 		const fileContents = fs.readFileSync(`${folder}${project}`, 'utf8');
+	// 		const matterResult = matter(fileContents);
+	// 		return matterResult.data.tags.includes(tag);
+	// 	});
+	// }
+
+	// Get URL param for tag
+	
 	const projects = markdownProjects.map((markdownProject) => {
 		const fileContents = fs.readFileSync(`${folder}${markdownProject}`, 'utf8');
 		const matterResult = matter(fileContents);

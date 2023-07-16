@@ -1,6 +1,7 @@
 import getProjectMetadata from '@/components/getProjectMetadata';
 import ProjectCard from '@/components/projects/preview';
 import TagsList from '@/components/projects/tags-list';
+import Toast from '@/components/ui/toast';
 
 export const metadata = {
 	title: 'Projects',
@@ -17,6 +18,10 @@ export default function Projects() {
 		<div className="grow md:flex space-y-8 md:space-y-0 md:space-x-8 pt-12 md:pt-16 pb-16 md:pb-20">
 
 			<div className="grow">
+
+				<Toast type="info">
+					<p className="font-medium">Hey, I'm currently working on the filter tags. They're not working, sorry. 😁</p>
+				</Toast>
 
 				<h1 className="h1 font-aspekta mb-12">Stuff I&apos;ve made</h1>
 
