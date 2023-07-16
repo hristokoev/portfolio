@@ -20,7 +20,7 @@ export default function Projects() {
 			<div className="grow">
 
 				<Toast type="info">
-					<p className="font-medium">Hey, I'm currently working on the filter tags. They're not working, sorry. 😁</p>
+					<p className="font-medium">Hey, I&apos;m currently working on the filter tags. They&apos;re not working, sorry. 😁</p>
 				</Toast>
 
 				<h1 className="h1 font-aspekta mb-12">Stuff I&apos;ve made</h1>
