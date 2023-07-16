@@ -7,9 +7,13 @@ tags: ["JavaScript", "HTML/CSS"]
 openSource: true
 ---
 
-```
-Technologies used: JavaScript, Chrome Extensions, Regex, HTML, CSS
-```
+## Technologies used
+
+* JavaScript, Regex
+* Chrome Extensions
+* HTML, CSS
+
+## Introduction
 
 Amadeus is a leading global distribution system (GDS) used in the travel industry, providing a comprehensive platform for travel agencies to book flights, hotels, car rentals, and other travel-related services.
 
