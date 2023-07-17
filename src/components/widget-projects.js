@@ -17,7 +17,7 @@ export default async function WidgetProjects() {
 						<Link
 							key={postIndex}
 							className="font-aspekta font-[650] text-sm inline-flex relative hover:text-rose-500 duration-150 ease-out before:scale-x-0 before:origin-center before:absolute before:inset-0 before:bg-rose-200 dark:before:bg-rose-500 before:opacity-30 before:-z-10 before:translate-y-1/4 before:-rotate-2 hover:before:scale-100 before:duration-150 before:ease-in-out"
-							href={`/posts/${post.slug}`}
+							href={`/projects/${post.slug}`}
 						>
 							{post.title}
 						</Link>
