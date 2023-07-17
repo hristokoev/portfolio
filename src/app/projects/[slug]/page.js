@@ -13,9 +13,13 @@ const getProjectContent = (slug) => {
 	return matterResult;
 }
 
-export const metadata = {
-	title: 'Projects',
-	description: 'Projects',
+export const generateMetadata = async ({ params }) => {
+	const slug = params.slug;
+	const project = getProjectContent(slug);
+	return {
+		title: `${project.data.title} - Projects`,
+		description: project.data.subtitle,
+	}
 }
 
 export const generateStaticParams = async () => {
@@ -35,7 +39,9 @@ const ProjectPage = (props) => {
 			<section className="lg:w-[900px]">
 				<h1 className="h1 font-aspekta mb-6">{project.data.title}</h1>
 
-				<TagsList metadata={[project.data]} />
+				{/* <div className="mb-6"> */}
+					<TagsList metadata={[project.data]} />
+				{/* </div> */}
 
 				<article className="prose prose-slate dark:prose-invert max-w-none">
 
