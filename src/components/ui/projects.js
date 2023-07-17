@@ -1,33 +1,21 @@
 import getProjectMetadata from '@/components/getProjectMetadata';
 import ProjectCard from '@/components/projects/preview';
-import TagsList from '@/components/projects/tags-list';
-import Toast from '@/components/ui/toast';
+import Link from 'next/link';
 
-export const metadata = {
-	title: 'Projects',
-	description: 'Projects',
-}
+export default function ProjectsGrid() {
 
-export default function Projects() {
-
-	const projectMetadata = getProjectMetadata().sort((a, b) => {
-		return new Date(b.date) - new Date(a.date);
-	});
+	const projectMetadata = getProjectMetadata()
+		.sort((a, b) => { return new Date(b.date) - new Date(a.date); })
+		.filter((project, index) => index < 6);
 
 	return (
 		<div className="grow md:flex space-y-8 md:space-y-0 md:space-x-8 pt-12 md:pt-16 pb-16 md:pb-20">
 
 			<div className="grow">
 
-				<Toast type="info">
-					<p className="font-medium">Hey, I&apos;m currently working on the filter tags. They&apos;re not working, sorry. 😁</p>
-				</Toast>
-
-				<h1 className="h1 font-aspekta mb-12">All Projects</h1>
+				<h2 className="h2 font-aspekta mb-6">Stuff I&apos;ve made</h2>
 
 				<div className="space-y-10">
-
-					<TagsList metadata={projectMetadata} />
 
 					<div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-5">
 
@@ -38,6 +26,13 @@ export default function Projects() {
 						)}
 
 					</div>
+
+					<div className="flex justify-center">
+						<Link className="btn text-white bg-sky-500 hover:bg-sky-600" href="/projects">
+							See all projects
+						</Link>
+					</div>
+
 				</div>
 
 			</div>

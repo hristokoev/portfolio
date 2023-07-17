@@ -5,16 +5,14 @@ import Image from 'next/image'
 
 export default function ProjectCard(item) {
 	return (
-		<Link className="rounded-lg border border-slate-200 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 transition-color ease-in-out group overflow-hidden" href={`projects/${item.slug}`}>
-			<Image src={item.thumb} width={500} height={300} alt={item.title} className="p-0" />
-			<div className="p-5 flex flex-col h-full">
-				<div className="grow">
-					<div className="flex items-center justify-between space-x-2">
-						<div className="mb-4">
-						</div>
-						{item.openSource && (
-							<div className="text-xs inline-flex items-center font-medium bg-green-100 text-green-600 rounded-full text-center px-2 h-5">Open-Source</div>
-						)}
+		<Link className="rounded-lg border border-slate-200 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 transition-color ease-in-out group overflow-hidden" href={`projects/${item.slug}`}>
+			<div className="flex flex-col h-full">
+				<Image src={item.thumb} width={500} height={300} alt={item.title} className="p-0" />
+				<div className="p-5 grow dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30">
+					<div className="mb-4 flex items-center justify-end space-x-2">
+						{item.tags.map((tag, index) => (
+							<div className="text-xs inline-flex items-center font-medium bg-slate-100 dark:bg-slate-600 dark:text-sky-100 rounded-full text-center px-2 h-5" key={index}>{tag}</div>
+						))}
 					</div>
 					<div className="text-lg font-aspekta font-[650] mb-1">{item.title}</div>
 					<p className="text-sm text-slate-500 dark:text-slate-400 mb-2">{item.subtitle}</p>

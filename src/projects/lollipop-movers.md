@@ -18,7 +18,7 @@ tags: ["React", "Tailwind CSS"]
 
 ## Introduction
 
-Lollipop Movers is a moving company based in Amsterda, Netherland. They needed a website to showcase their services and allow customers to request a quote.
+Lollipop Movers is a moving company based in Amsterdam, Netherlands. They needed a website to showcase their services and allow customers to request a quote.
 
 ## My Role
 

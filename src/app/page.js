@@ -5,6 +5,7 @@ import Flag from '../../public/images/czechia-czech-republic-flag.svg'
 // Projects
 import getProjectMetadata from '@/components/getProjectMetadata';
 import ProjectPreview from '@/components/projects/preview';
+import ProjectsGrid from '@/components/ui/projects';
 
 export const metadata = {
 	title: 'Hristo Koev - Web Developer & Motion Graphics Artist',
@@ -32,10 +33,10 @@ export default function Home() {
 							<h2 className="h2 font-aspekta mb-5 md:whitespace-nowrap">
 								A <span className="inline-flex relative text-sky-500 before:absolute before:inset-0 before:bg-sky-200 dark:before:bg-sky-500 before:opacity-30 before:-z-10 before:-rotate-2 before:translate-y-1/4">Web Developer</span> based in Prague <Image className="inline-block" src={Flag} width={40} height={40} alt="Flag" /></h2>
 						</div>
-						<div className="grid sm:grid-cols-2 gap-4">
+						<div className="flex">
 							<div className="group">
-								<a href="https://github.com/hristokoev/" className="group-hover:bg-new-500 group-hover:border-slate-700 dark:group-hover:border-slate-500 transition-all flex space-x-4 p-4 rounded-xl border border-dashed dark:bg-slate-900 dark:border-slate-700 border-slate-400 items-center justify-center">
-									<svg className="dark:fill-white fill-slate-700 group-hover:fill-interface-500" width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<a href="https://github.com/hristokoev/" className="group-hover:bg-new-500 group-hover:border-slate-700 dark:group-hover:border-slate-500 transition-all flex space-x-4 p-4 rounded-xl dark:bg-slate-900 dark:border-slate-700 items-center justify-center" target="_blank">
+									<svg className="dark:fill-white dark:hover:fill-slate-200 fill-slate-700 hover:fill-slate-600 group-hover:fill-interface-500" width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clipPath="url(#clip0_537_18858)">
 											<path d="M14.4272 32.1624C14.1491 32.2142 14.0276 32.3447 14.0625 32.5529C14.0971 32.7611 14.2534 32.8307 14.5311 32.7611C14.8092 32.6918 14.9306 32.57 14.8957 32.3965C14.8612 32.2057 14.705 32.1275 14.4272 32.1624Z"></path>
 											<path d="M12.943 32.3703C12.6652 32.3703 12.5264 32.4652 12.5264 32.6566C12.5264 32.8823 12.674 32.9775 12.969 32.9428C13.2469 32.9428 13.3859 32.8473 13.3859 32.6566C13.3859 32.4312 13.2382 32.3353 12.943 32.3703Z"></path>
@@ -52,12 +53,11 @@ export default function Home() {
 											</clipPath>
 										</defs>
 									</svg>
-									<span className="dark:text-white transition-all group-hover:text-interface-100 text-2xl font-semibold">Github</span>
 								</a>
 							</div>
 							<div className="group">
-								<a href="https://www.linkedin.com/in/hristo-koev/" className="group-hover:bg-new-500 group-hover:border-slate-700 dark:group-hover:border-slate-500 transition-all flex space-x-4 p-4 rounded-xl border border-dashed dark:bg-slate-900 dark:border-slate-700 border-slate-400 items-center justify-center">
-									<svg className="dark:fill-white fill-slate-700 group-hover:fill-interface-100" width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<a href="https://www.linkedin.com/in/hristo-koev/" className="group-hover:bg-new-500 group-hover:border-slate-700 dark:group-hover:border-slate-500 transition-all flex space-x-4 p-4 rounded-xl dark:bg-slate-900 dark:border-slate-700 items-center justify-center" target="_blank">
+									<svg className="dark:fill-white dark:hover:fill-slate-200 fill-slate-700 hover:fill-slate-600 group-hover:fill-interface-100" width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clipPath="url(#clip0_537_18883)">
 											<path d="M34.5455 0H5.45455C4.00791 0 2.62053 0.574674 1.5976 1.5976C0.574674 2.62053 0 4.00791 0 5.45455L0 34.5455C0 35.9921 0.574674 37.3795 1.5976 38.4024C2.62053 39.4253 4.00791 40 5.45455 40H34.5455C35.9921 40 37.3795 39.4253 38.4024 38.4024C39.4253 37.3795 40 35.9921 40 34.5455V5.45455C40 4.00791 39.4253 2.62053 38.4024 1.5976C37.3795 0.574674 35.9921 0 34.5455 0ZM13.6364 31.6545C13.6367 31.7655 13.6151 31.8754 13.5728 31.9779C13.5306 32.0805 13.4685 32.1737 13.3902 32.2522C13.3119 32.3308 13.2188 32.3931 13.1164 32.4356C13.0139 32.4781 12.9041 32.5 12.7932 32.5H9.2C9.08889 32.5003 8.97882 32.4786 8.8761 32.4363C8.77339 32.3939 8.68007 32.3316 8.6015 32.253C8.52294 32.1745 8.46067 32.0812 8.41829 31.9784C8.37591 31.8757 8.35425 31.7657 8.35455 31.6545V16.5909C8.35455 16.3667 8.44362 16.1516 8.60217 15.9931C8.76073 15.8345 8.97577 15.7455 9.2 15.7455H12.7932C13.017 15.7461 13.2315 15.8354 13.3895 15.9939C13.5476 16.1524 13.6364 16.3671 13.6364 16.5909V31.6545ZM10.9955 14.3182C10.3212 14.3182 9.66209 14.1182 9.10147 13.7436C8.54084 13.3691 8.10389 12.8366 7.84587 12.2137C7.58784 11.5908 7.52033 10.9053 7.65187 10.244C7.78341 9.58271 8.10809 8.97527 8.58486 8.4985C9.06163 8.02173 9.66908 7.69705 10.3304 7.5655C10.9917 7.43396 11.6771 7.50148 12.3001 7.7595C12.923 8.01753 13.4554 8.45448 13.83 9.0151C14.2046 9.57572 14.4045 10.2348 14.4045 10.9091C14.4045 11.8132 14.0454 12.6804 13.406 13.3197C12.7667 13.959 11.8996 14.3182 10.9955 14.3182ZM32.4182 31.7136C32.4185 31.8158 32.3986 31.917 32.3596 32.0114C32.3207 32.1059 32.2634 32.1917 32.1912 32.2639C32.119 32.3362 32.0332 32.3934 31.9387 32.4324C31.8443 32.4713 31.7431 32.4912 31.6409 32.4909H27.7773C27.6751 32.4912 27.5739 32.4713 27.4795 32.4324C27.385 32.3934 27.2992 32.3362 27.227 32.2639C27.1548 32.1917 27.0975 32.1059 27.0586 32.0114C27.0196 31.917 26.9997 31.8158 27 31.7136V24.6568C27 23.6023 27.3091 20.0386 24.2432 20.0386C21.8682 20.0386 21.3841 22.4773 21.2886 23.5727V31.7227C21.2887 31.9269 21.2083 32.1229 21.065 32.2684C20.9217 32.4138 20.7269 32.497 20.5227 32.5H16.7909C16.6889 32.5 16.588 32.4799 16.4938 32.4408C16.3996 32.4017 16.3141 32.3444 16.2421 32.2722C16.1701 32.2 16.1131 32.1143 16.0742 32.02C16.0354 31.9257 16.0156 31.8247 16.0159 31.7227V16.525C16.0156 16.423 16.0354 16.322 16.0742 16.2277C16.1131 16.1334 16.1701 16.0477 16.2421 15.9755C16.3141 15.9033 16.3996 15.846 16.4938 15.8069C16.588 15.7678 16.6889 15.7477 16.7909 15.7477H20.5227C20.7289 15.7477 20.9266 15.8296 21.0723 15.9754C21.2181 16.1212 21.3 16.3189 21.3 16.525V17.8386C22.1818 16.5136 23.4886 15.4955 26.2773 15.4955C32.4545 15.4955 32.4136 21.2636 32.4136 24.4318L32.4182 31.7136Z"></path>
 										</g>
@@ -67,7 +67,6 @@ export default function Home() {
 											</clipPath>
 										</defs>
 									</svg>
-									<span className="dark:text-white transition-all group-hover:text-interface-100 text-2xl font-semibold">Linkedin</span>
 								</a>
 							</div>
 						</div>
@@ -86,6 +85,9 @@ export default function Home() {
 						<p>
 							If you have a project you&apos;d like to discuss, feel free to write me an email at <a className="text-sky-500 hover:text-sky-400" href="mailto:hristo@koev.me">hristo@koev.me</a>.
 						</p>
+
+						<ProjectsGrid />
+
 					</div>
 
 				</div>
