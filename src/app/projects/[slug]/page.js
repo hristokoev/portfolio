@@ -37,7 +37,7 @@ const ProjectPage = (props) => {
 	return (
 		<div className="grow md:flex space-y-8 md:space-y-0 md:space-x-8 pt-12 md:pt-16 pb-16 md:pb-20">
 			<section className="lg:w-[900px]">
-				<h1 className="h1 font-aspekta mb-6">{project.data.title}</h1>
+				<h1 className="h1 font-aspekta pb-4 mb-6"><span className="bg-gradient-to-r from-green-300 via-sky-500 to-purple-500 bg-[length:100%_4px] bg-no-repeat bg-bottom">{project.data.title}</span></h1>
 
 				{/* <div className="mb-6"> */}
 					<TagsList metadata={[project.data]} />

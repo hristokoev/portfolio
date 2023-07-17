@@ -31,12 +31,13 @@ export default function Home() {
 						<div>
 
 							<h1
-								className="h1 font-trueno font-extrabold text-transparent text-7xl mb-4 bg-clip-text bg-slate-800 dark:bg-gradient-to-r from-rose-500 to-sky-400"
+								className="h1 font-trueno font-extrabold text-transparent text-7xl mb-4 bg-clip-text bg-slate-800 dark:bg-gradient-to-r from-green-400 via-sky-500 to-purple-500"
 							>
 								Hi,<br />I am <span className="block uppercase dark:italic tracking-[6px]">Hristo Koev</span>
 							</h1>
 							<h2 className="h2 font-aspekta md:whitespace-nowrap">
-								A Web Developer based in Prague <Image className="inline-block" src={Flag} width={40} height={40} alt="Flag" /></h2>
+								A Web Developer based in Prague</h2>
+								{/* A Web Developer based in Prague <Image className="inline-block" src={Flag} width={40} height={40} alt="Flag" /></h2> */}
 						</div>
 						<div className="flex space-x-4">
 							<div className="group">
@@ -78,7 +79,12 @@ export default function Home() {
 
 					</div>
 					<div className="p-5 rounded-full overflow-hidden border-2 border-dashed border-slate-300/75 dark:border-slate-700/75">
-						<Image className="rounded-full opacity-90 w-48 lg:w-auto lg:max-w-[256px]" src={ProflieImg} width={256} height={256} alt="About" />
+						<div className="block relative group">
+							<div className="absolute flex items-center justify-center bg-gradient-to-br from-green-500/25 via-sky-500/25 to-purple-500/25 rounded-full w-full h-full z-10 opacity-0 group-hover:opacity-100 duration-150">
+								<p className="text-sm italic pointer-events-none text-white">* def not generated w/ AI 👀*</p>
+							</div>
+							<Image className="rounded-full opacity-90 w-48 lg:w-auto lg:max-w-[256px]" src={ProflieImg} width={256} height={256} alt="About" />
+						</div>
 					</div>
 				</div>
 
@@ -89,7 +95,7 @@ export default function Home() {
 							I&apos;m a front-end developer with a passion for motion graphics. I specialize in React for web development and constantly strive to expand my skills.
 						</p>
 						<p>
-							If you have a project you&apos;d like to discuss, feel free to write me an email at <a className="text-rose-400 hover:text-rose-300" href="mailto:hristo@koev.me">hristo@koev.me</a>.
+							If you have a project you&apos;d like to discuss, feel free to write me an email at <a className="underline hover:no-underline text-sky-600 dark:text-sky-400" href="mailto:hristo@koev.me">hristo@koev.me</a>.
 						</p>
 
 					</div>

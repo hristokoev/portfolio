@@ -14,7 +14,7 @@ export default function ProjectsGrid() {
 			<div className="grow">
 
 				<div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-					<h2 className="h2 font-cabinet-grotesk dark:text-gray-100">Stuff I&apos;ve made</h2>
+					<h2 className="h2 font-cabinet-grotesk dark:text-gray-100">Some <span className="bg-gradient-to-r from-green-300 via-sky-500 to-purple-500 bg-[length:100%_4px] bg-no-repeat bg-bottom">stuff</span> that I&apos;ve made</h2>
 				</div>
 
 				<div className="space-y-10 relative">
@@ -31,7 +31,7 @@ export default function ProjectsGrid() {
 
 					<div className="flex justify-center items-center absolute bottom-0 w-full h-48 bg-gradient-to-t from-white dark:from-slate-900 pointer-events-none">
 						<div>
-							<Link className="btn inline-flex items-center text-white bg-rose-500 hover:bg-rose-600 group pointer-events-auto" href="/projects">
+							<Link className="btn inline-flex items-center text-white bg-cyan-500 hover:bg-cyan-600 group pointer-events-auto" href="/projects">
 								See All Projects
 								<span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
 									<svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="8">

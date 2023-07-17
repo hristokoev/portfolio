@@ -44,7 +44,7 @@ export default function Toast({ children, className = '', type = '', }) {
 			case 'success':
 				return 'bg-emerald-500'
 			default:
-				return 'bg-sky-500'
+				return 'bg-gradient-to-r from-green-500/90 via-sky-500/90 to-purple-500/90 bg-no-repeat bg-bottom'
 		}
 	}
 
