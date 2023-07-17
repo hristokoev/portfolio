@@ -2,6 +2,8 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import getProjectMetadata from '@/components/getProjectMetadata';
+import TagsList from '@/components/projects/tags-list';
+import WidgetProjects from '@/components/widget-projects';
 
 const getProjectContent = (slug) => {
 	const folder = 'src/projects/';
@@ -29,11 +31,27 @@ const ProjectPage = (props) => {
 	const project = getProjectContent(slug);
 
 	return (
-		<div>
-			<h1 className="h1 font-aspekta mb-12">{project.data.title}</h1>
-			<article className="prose prose-slate dark:prose-invert max-w-none">
-				<Markdown>{project.content}</Markdown>
-			</article>
+		<div className="grow md:flex space-y-8 md:space-y-0 md:space-x-8 pt-12 md:pt-16 pb-16 md:pb-20">
+			<div>
+				<h1 className="h1 font-aspekta mb-6">{project.data.title}</h1>
+
+				<TagsList metadata={[project.data]} />
+
+				<article className="prose prose-slate dark:prose-invert max-w-none">
+
+					<Markdown>{project.content}</Markdown>
+
+				</article>
+			</div>
+			<section>
+				<aside className="md:w-[240px] lg:w-[300px] shrink-0">
+					<div className="space-y-6">
+
+						<WidgetProjects />
+
+					</div>
+				</aside>
+			</section>
 		</div>
 	)
 }
