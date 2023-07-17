@@ -7,11 +7,15 @@ export default function ProjectCard(item) {
 	return (
 		<Link className="rounded-lg border border-slate-200 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 transition-color ease-in-out group overflow-hidden" href={`projects/${item.slug}`}>
 			<div className="flex flex-col h-full">
-				<Image src={item.thumb} width={500} height={300} alt={item.title} className="p-0" />
+				{/* Put half transparent div with the same size as the image on top of the image */}
+				<div className="relative group">
+					{/* <div className="absolute inset-0 bg-rose-500/50 z-10 group-hover:hidden opacity-50"></div> */}
+					<Image src={item.thumb} width={500} height={300} alt={item.title} className="p-0 grayscale hover:grayscale-0" />
+				</div>
 				<div className="p-5 grow dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30">
 					<div className="mb-4 flex items-center justify-end space-x-2">
 						{item.tags.map((tag, index) => (
-							<div className="text-xs inline-flex items-center font-medium bg-slate-100 dark:bg-slate-600 dark:text-rose-100 rounded-full text-center px-2 h-5" key={index}>{tag}</div>
+							<div className="text-xs inline-flex items-center bg-slate-100 dark:bg-slate-600 dark:text-slate-100 rounded-full text-center p-2 h-5" key={index}>{tag}</div>
 						))}
 					</div>
 					<div className="text-lg font-aspekta font-[650] mb-1">{item.title}</div>

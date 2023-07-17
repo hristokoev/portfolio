@@ -21,10 +21,10 @@ export default function Projects() {
 
 				<h1 className="h1 font-aspekta mb-12">All Projects</h1>
 
-				<Toast type="error">
+				<Toast type="info">
 					<p className="font-medium">Hey, I&apos;m currently working on the filter tags. They&apos;re not working, sorry. 😁</p>
 				</Toast>
-				
+
 				<div className="space-y-10">
 
 					<TagsList metadata={projectMetadata} />
