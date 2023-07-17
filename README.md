@@ -3,3 +3,5 @@ This is my first [Next.js](https://nextjs.org/) project bootstrapped with [`crea
 I used [Tailwind CSS](https://tailwindcss.com/) for styling and Markdown for the project posts.
 
 This will ultimately be my first portfolio website.
+
+Link is at [koev.me](https://koev.me/)
