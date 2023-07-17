@@ -25,10 +25,6 @@ export default function Home() {
 			{ /* Middle area */}
 			<div className="grow space-y-8">
 
-				<div className="absolute top-0 translate-y-1/2 left-0 pointer-events-none -z-10 h-48 w-full dark:bg-gradient-to-b from-slate-800 to-slate-900 dark:border-t dark:border-slate-600/50" aria-hidden="true">
-
-				</div>
-
 				{ /* Page title */}
 				<div className="flex flex-col-reverse md:flex-row items-center justify-between md:mb-12 gap-y-4">
 					<div className="space-y-8">

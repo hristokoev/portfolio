@@ -24,6 +24,7 @@ export default function Header() {
 					<ThemeToggle />
 				</div>
 			</div>
+			<div className="absolute top-0 translate-y-1/2 left-0 pointer-events-none -z-10 h-48 w-full dark:bg-gradient-to-b from-slate-800 to-slate-900 dark:border-t dark:border-slate-600/50" aria-hidden="true"></div>
 		</header>
 	)
 }
