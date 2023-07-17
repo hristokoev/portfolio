@@ -14,7 +14,7 @@ export default function ProjectsGrid() {
 			<div className="grow">
 
 				<div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-					<h2 className="h2 font-cabinet-grotesk dark:text-gray-100">Stuff that I&apos;ve made recently</h2>
+					<h2 className="h2 font-cabinet-grotesk dark:text-gray-100">Stuff I&apos;ve made</h2>
 				</div>
 
 				<div className="space-y-10 relative">

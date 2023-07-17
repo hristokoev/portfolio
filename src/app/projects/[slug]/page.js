@@ -32,7 +32,7 @@ const ProjectPage = (props) => {
 
 	return (
 		<div className="grow md:flex space-y-8 md:space-y-0 md:space-x-8 pt-12 md:pt-16 pb-16 md:pb-20">
-			<div>
+			<section className="lg:w-[900px]">
 				<h1 className="h1 font-aspekta mb-6">{project.data.title}</h1>
 
 				<TagsList metadata={[project.data]} />
@@ -42,16 +42,14 @@ const ProjectPage = (props) => {
 					<Markdown>{project.content}</Markdown>
 
 				</article>
-			</div>
-			<section>
-				<aside className="md:w-[240px] lg:w-[300px] shrink-0">
-					<div className="space-y-6">
-
-						<WidgetProjects />
-
-					</div>
-				</aside>
 			</section>
+			<aside className="md:w-[240px] lg:w-[300px] shrink-0">
+				<div className="space-y-6">
+
+					<WidgetProjects />
+
+				</div>
+			</aside>
 		</div>
 	)
 }

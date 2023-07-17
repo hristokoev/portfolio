@@ -29,7 +29,7 @@ export default function Projects() {
 
 					<TagsList metadata={projectMetadata} />
 
-					<div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-5">
+					<div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
 						{projectMetadata.length > 0 ? projectMetadata.map(project => (
 							<ProjectCard key={project.slug} {...project} />
