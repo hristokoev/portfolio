@@ -12,7 +12,7 @@ export default async function WidgetProjects() {
 			<div className="font-aspekta font-[650] mb-3">Latest Projects</div>
 			<ul className="space-y-3 flex flex-col">
 				{projectMetadata.slice(0, 5).map((post, postIndex) => (
-					<li className="inline-flex">
+					<li className="inline-flex" key={post}>
 						<span className="text-rose-500 mr-2">—</span>{' '}
 						<Link
 							key={postIndex}
