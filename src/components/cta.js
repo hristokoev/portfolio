@@ -20,7 +20,7 @@ export default function Cta() {
 							Do you have a project in mind?
 						</h2>
 						<div data-aos="fade-up" data-aos-delay="100">
-							<Link className="btn inline-flex items-center text-slate-200 dark:text-slate-800 bg-slate-800 hover:bg-slate-700 dark:bg-white dark:hover:bg-slate-100 group" href="/schedule-call">
+							<Link className="btn inline-flex items-center text-slate-200 dark:text-slate-800 bg-slate-800 hover:bg-slate-700 dark:bg-white dark:hover:bg-slate-100 group"  href="mailto:hristo@koev.me">
 								Let's Connect
 								<span className="tracking-normal text-rose-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
 									<svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="8">

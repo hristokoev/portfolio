@@ -29,7 +29,7 @@ export default function ProjectsGrid() {
 
 					</div>
 
-					<div className="flex justify-center items-center absolute bottom-0 w-full h-48 bg-gradient-to-t from-white dark:from-gray-900 pointer-events-none">
+					<div className="flex justify-center items-center absolute bottom-0 w-full h-48 bg-gradient-to-t from-white dark:from-slate-900 pointer-events-none">
 						<div>
 							<Link className="btn inline-flex items-center text-white bg-rose-500 hover:bg-rose-600 group pointer-events-auto" href="/projects">
 								See All Projects

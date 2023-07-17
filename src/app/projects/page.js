@@ -19,7 +19,7 @@ export default function Projects() {
 
 			<div className="grow">
 
-				<Toast type="info">
+				<Toast type="error">
 					<p className="font-medium">Hey, I&apos;m currently working on the filter tags. They&apos;re not working, sorry. 😁</p>
 				</Toast>
 
