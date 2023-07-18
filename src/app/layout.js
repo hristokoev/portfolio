@@ -5,6 +5,8 @@ import Theme from './theme-provider'
 import Header from '@/components/ui/header'
 import Cta from '@/components/cta'
 
+import { Analytics } from '@vercel/analytics/react'
+
 const inter = Inter({
 	subsets: ['latin'],
 	variable: '--font-inter',
@@ -83,6 +85,7 @@ export default function RootLayout({ children }) {
 					</div>
 					<Cta />
 				</Theme>
+				<Analytics />
 			</body>
 		</html>
 	)
