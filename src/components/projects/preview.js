@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function ProjectCard(item) {
 	return (
-		<Link className="rounded-lg border border-slate-200 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 transition-color ease-in-out group overflow-hidden" href={`projects/${item.slug}`}>
+		<Link className="rounded-lg border border-slate-200 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 transition-color ease-in-out group overflow-hidden" href={`/projects/${item.slug}`}>
 			<div className="flex flex-col h-full">
 				<Image src={item.thumb} width={500} height={300} alt={item.title} className="p-0 w-auto" />
 				<div className="p-5 grow dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30">

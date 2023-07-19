@@ -37,7 +37,7 @@ Small note: see that I've written CDG and AMS in the fields, but it converted it
 
 I found out that selecting lines like that is not scalable. There had to be a better way. So I decided to go for a 'blog' type of functionality.
 
-[<img src="/images/email-templates/1-thumb.jpg" alt="Second version of the app" class="inline-flex" />](/images/email-templates/1.jpg)
+[<img src="/images/email-templates/1-thumb.jpg" alt="Second version of the app" className="inline-flex" />](/images/email-templates/1.jpg)
 
 I divided the emails into categories. This meant that I had to start from scratch and:
 
@@ -53,19 +53,19 @@ Also, I really wanted to use AI, so that was part of the plan - to use GPT-3 for
 
 #### 1. Categories 
 
-[<img src="/images/email-templates/2-thumb.jpg" alt="Categories" class="inline-flex" />](/images/email-templates/2.jpg)
+[<img src="/images/email-templates/2-thumb.jpg" alt="Categories" className="inline-flex" />](/images/email-templates/2.jpg)
 
 In Firestore, I set up a collection for the categories and a collection for the emails. Each email has a category ID, which is used to query the emails for each category.
 
 #### 2. Email Page
 
-[<img src="/images/email-templates/3-thumb.jpg" alt="Email page" class="inline-flex" />](/images/email-templates/3.jpg)
+[<img src="/images/email-templates/3-thumb.jpg" alt="Email page" className="inline-flex" />](/images/email-templates/3.jpg)
 
 The email page is pretty straightforward. It just displays the email and the user can copy it. However, I still left the functionality to update fields in the email. Upon selecting a field, the user gets to choose from a list of options or type in a custom value.
 
 #### 3. Template Editor
 
-[<img src="/images/email-templates/4-thumb.jpg" alt="Template editor" class="inline-flex" />](/images/email-templates/4.jpg)
+[<img src="/images/email-templates/4-thumb.jpg" alt="Template editor" className="inline-flex" />](/images/email-templates/4.jpg)
 
 And this was the toughest part of this whole project! Due to the fact that each email is not simply a text, but a combination of text and fields, I had to come up with a way to 'build' the email for the user. So I looked around for a few days and found Craft.js. It's a React library that allows you to build a page with drag and drop functionality.
 
