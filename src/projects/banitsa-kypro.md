@@ -6,4 +6,13 @@ thumb: "/images/banitsa-kypro/thumb.jpg"
 tags: ["WordPress", "PHP", "JavaScript", "HTML/CSS"]
 ---
 
-Will write about this project later.
+## Technologies used
+
+* WordPress
+* PHP
+* JavaScript
+* HTML/CSS
+* Photoshop
+* Discord
+
+_This content is a work in progress. I'll write more about this project later._

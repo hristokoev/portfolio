@@ -6,4 +6,13 @@ thumb: "/images/24-home/thumb.jpg"
 tags: ["WordPress"]
 ---
 
-Will write about this project later.
+## Technologies used
+
+* WordPress, WooCommerce
+* Google Sheets API, Google Apps Script
+* PHP
+* JavaScript
+* HTML/CSS
+* Photoshop
+
+_This content is a work in progress. I'll write more about this project later._

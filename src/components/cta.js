@@ -4,7 +4,7 @@ import Illustration from '../../public/images/cta-illustration.svg'
 
 export default function Cta() {
 	return (
-		<section className="relative overflow-hidden border-t border-slate-200 dark:border-slate-800 font-aspekta">
+		<section className="relative overflow-hidden border-t border-slate-200 dark:border-slate-700/75 font-aspekta">
 			{/* Bg */}
 			<div className="absolute inset-0 dark:bg-slate-800/50 pointer-events-none -z-10" aria-hidden="true" />
 

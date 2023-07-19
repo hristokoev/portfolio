@@ -6,4 +6,12 @@ thumb: "/images/autoskola-duspiva/thumb.jpg"
 tags: ["WordPress"]
 ---
 
-Will write about this project later.
+## Technologies used
+
+* WordPress
+* PHP
+* JavaScript
+* HTML/CSS
+* Photoshop
+
+_This content is a work in progress. I'll write more about this project later._

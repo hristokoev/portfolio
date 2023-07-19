@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import ProflieImg from '../../public/images/profile.jpg'
-import Flag from '../../public/images/czechia-czech-republic-flag.svg'
+import ProflieImgDay from '../../public/images/profile-day.jpg'
 
 // Projects
 import getProjectMetadata from '@/components/getProjectMetadata';
@@ -36,8 +36,9 @@ export default function Home() {
 								Hi,<br />I am <span className="block uppercase dark:italic tracking-[6px]">Hristo Koev</span>
 							</h1>
 							<h2 className="h2 font-aspekta md:whitespace-nowrap">
-								A Web Developer based in Prague</h2>
-								{/* A Web Developer based in Prague <Image className="inline-block" src={Flag} width={40} height={40} alt="Flag" /></h2> */}
+								A <span className="dark:bg-none bg-gradient-to-r from-green-300 via-sky-500 to-purple-500 bg-[length:100%_4px] bg-no-repeat bg-bottom">Web Developer</span> based in Prague
+							</h2>
+
 						</div>
 						<div className="flex space-x-4">
 							<div className="group">
@@ -80,8 +81,8 @@ export default function Home() {
 					</div>
 					<div className="p-5 rounded-full overflow-hidden border-2 border-dashed border-slate-300/75 dark:border-slate-700/75">
 						<div className="block relative group">
-							<div className="absolute flex items-center justify-center bg-gradient-to-br from-green-500/25 via-sky-500/25 to-purple-500/25 rounded-full w-full h-full z-10 opacity-0 group-hover:opacity-100 duration-150">
-								<p className="text-sm italic pointer-events-none text-white">* def not generated w/ AI 👀*</p>
+							<div className="absolute flex items-center justify-center bg-gradient-to-br from-green-500/25 via-sky-500/25 to-purple-500/25 rounded-full w-full h-full z-10 opacity-0 group-hover:opacity-100 group-hover:rotate-3 duration-150">
+								<p className="text-sm italic pointer-events-none text-white -rotate-3">* def not generated w/ AI 👀*</p>
 							</div>
 							<Image className="rounded-full opacity-90 w-48 lg:w-auto lg:max-w-[256px]" src={ProflieImg} width={256} height={256} alt="About" />
 						</div>
@@ -89,8 +90,8 @@ export default function Home() {
 				</div>
 
 				{ /* Page content */}
-				<div className="text-slate-600 dark:text-slate-300">
-					<div className="space-y-4">
+				<div>
+					<div className="space-y-4 text-slate-600 dark:text-slate-300">
 						<p>
 							I&apos;m a front-end developer with a passion for motion graphics. I specialize in React for web development and constantly strive to expand my skills.
 						</p>
