@@ -7,6 +7,23 @@ export const metadata = {
 	description: 'Projects',
 }
 
+export const getStaticPaths = async () => {
+	const projects = getProjectMetadata();
+	const tags = [...new Set(projects.map(project => project.tags).flat())];
+	const slugs = tags.map((tag) => {
+		tag = tag.toLowerCase();
+		tag = tag.replace(/\s+|\/|\./g, '-');
+		return tag;
+	});
+	const paths = slugs.map((slug) => ({
+		params: { tag: slug },
+	}));
+	return {
+		paths,
+		fallback: false,
+	};
+};
+
 export default function TagPage(props) {
 
 	const tag = props.params.tag;
