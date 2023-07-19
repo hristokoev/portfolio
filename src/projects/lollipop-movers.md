@@ -6,27 +6,27 @@ thumb: "/images/lollipop-movers/thumb.jpg"
 tags: ["React", "Tailwind CSS"]
 ---
 
-![Lollipop Movers](/images/lollipop-movers/thumb.jpg)
-
-[Lollipop Movers](https://lollipopmovers.nl/)
-
 ## Technologies used
 
 * React
 * Tailwind CSS
 * Firebase
 
-## Introduction
+### Introduction
+
+![Lollipop Movers](/images/lollipop-movers/thumb.jpg)
+
+[Lollipop Movers](https://lollipopmovers.nl/)
 
 Lollipop Movers is a moving company based in Amsterdam, Netherlands. They needed a website to showcase their services and allow customers to request a quote.
 
-## My Role
+### My Role
 
 I was hired as a freelance developer to build the website. I was responsible for the design, development, and deployment of the website.
 
 In reality, this was my first real React project.
 
-## Further Development
+### Further Development
 
 For now though, it's a work in progress. Currently I'm developing the admin panel for easier management of the requests.
 

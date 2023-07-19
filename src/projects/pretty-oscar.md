@@ -13,13 +13,13 @@ openSource: true
 * Chrome Extensions
 * HTML, CSS
 
-## Introduction
+### Introduction
 
 Amadeus is a leading global distribution system (GDS) used in the travel industry, providing a comprehensive platform for travel agencies to book flights, hotels, car rentals, and other travel-related services.
 
 While extremely powerful, its UI is a bit dated and clunky. This is where Pretty OSCAR comes in.
 
-## The Problem
+### The Problem
 
 * The current format of the information provided by Amadeus is difficult for new agents to read and interpret.
 * The information is not clearly visible at first glance, which can make it challenging for agents to quickly identify important details about flights, airports, travel agencies, and other key information.
@@ -30,7 +30,7 @@ Here's what you get once you try to see the flight history of a passenger:
 
 Put yourself in the shoes of an agent. You're trying to see the flight history, but the information is all over the place. It's a mess.
 
-## The Solution
+### The Solution
 
 I've used the help of [highlight.js](https://highlightjs.org/) to parse a `<pre>` tag (the only HTML element that Amadeus gives you) and highlight the text based on a regex pattern.
 
@@ -51,11 +51,11 @@ Amadeus with parsed and stylized text | Pretty OSCAR Chrome Extension UI
 
 I've also added some nice features, which were pretty easy to implement, but very much appreciated by the users. For example, I've added hyperlinks to other tools that the agents use, I've also added translations for the status, IATA and booking classes codes.
 
-## Repository
+### Repository
 
 You can find the repository [here](https://github.com/hristokoev/pretty-oscar).
 
-## Further Development
+### Further Development
 
 Currently, the extension is used by a couple of selected agents and it's been a great success. I've received a lot of positive feedback and I'm happy that I was able to help my colleagues. However, I'm not sure if I'll be able to continue working on this project, as I'll be no longer working for the company that uses Amadeus. Additionally, it's pretty hard to make changes to the internal workflow, as it's a big company with a lot of bureaucracy. 
 
