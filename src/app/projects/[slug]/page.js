@@ -2,7 +2,7 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import getProjectMetadata from '@/components/getProjectMetadata';
-import TagsList from '@/components/projects/tags-list';
+import ProjectTags from '@/components/projects/tags';
 import WidgetProjects from '@/components/widget-projects';
 
 const getProjectContent = (slug) => {
@@ -40,7 +40,7 @@ const ProjectPage = (props) => {
 				<h1 className="h1 font-aspekta pb-4 mb-6"><span className="bg-gradient-to-r from-green-300 via-sky-500 to-purple-500 bg-[length:100%_4px] bg-no-repeat bg-bottom">{project.data.title}</span></h1>
 
 				{/* <div className="mb-6"> */}
-					<TagsList metadata={[project.data]} />
+					<ProjectTags metadata={[project.data]} />
 				{/* </div> */}
 
 				<article className="prose prose-slate dark:prose-invert max-w-none">
