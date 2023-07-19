@@ -1,4 +1,5 @@
 import getProjectMetadata from '@/components/getProjectMetadata';
+import getProjectTags from '@/components/getProjectTags';
 import ProjectCard from '@/components/projects/preview';
 import TagsList from '@/components/ui/tags-list';
 
@@ -8,21 +9,16 @@ export const metadata = {
 }
 
 export const getStaticPaths = async () => {
-	const projects = getProjectMetadata();
-	const tags = [...new Set(projects.map(project => project.tags).flat())];
-	const slugs = tags.map((tag) => {
-		tag = tag.toLowerCase();
-		tag = tag.replace(/\s+|\/|\./g, '-');
-		return tag;
-	});
-	const paths = slugs.map((slug) => ({
-		params: { tag: slug },
-	}));
+	const tags = getProjectTags();
 	return {
-		paths,
+		paths: tags.map((tag) => ({
+			params: {
+				tag: tag.id,
+			}
+		})),
 		fallback: false,
 	};
-};
+}
 
 export default function TagPage(props) {
 

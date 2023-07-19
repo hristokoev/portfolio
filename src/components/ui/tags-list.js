@@ -1,23 +1,9 @@
 import Link from "next/link";
+ import getProjectTags from '@/components/getProjectTags';
 
 export default function TagsList({ selectedTag }) {
 
-	const tags = [
-		{ name: "All", id: "all" },
-		{ name: "Next.js", id: "next-js" },
-		{ name: "Tailwind CSS", id: "tailwind-css" },
-		{ name: "React", id: "react" },
-		{ name: "Firebase", id: "firebase" },
-		{ name: "AI", id: "ai" },
-		{ name: "JavaScript", id: "javascript" },
-		{ name: "HTML/CSS", id: "html-css" },
-		{ name: "C", id: "c" },
-		{ name: "PHP", id: "php" },
-		{ name: "Shopify", id: "shopify" },
-		{ name: "Liquid", id: "liquid" },
-		{ name: "WordPress", id: "wordpress" },
-		{ name: "After Effects", id: "after-effects" }
-	]
+	const tags = getProjectTags();
 
 	return (
 		<div className="mb-4 sm:mb-0">
