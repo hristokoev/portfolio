@@ -4,6 +4,7 @@ subtitle: "A complete redesign of the Vangoren Adult Network."
 date: "2022-09-01"
 thumb: "/images/nsfw-vangoren/thumb.jpg"
 tags: ["PHP", "JavaScript", "HTML/CSS"]
+category: "Web Development"
 ---
 
 ## Technologies used

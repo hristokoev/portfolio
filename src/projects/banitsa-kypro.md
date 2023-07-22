@@ -4,6 +4,7 @@ subtitle: "A website for a Bulgarian restaurant."
 date: "2020-12-25"
 thumb: "/images/banitsa-kypro/thumb.jpg"
 tags: ["WordPress", "PHP", "JavaScript", "HTML/CSS"]
+category: "Web Development"
 ---
 
 ## Technologies used

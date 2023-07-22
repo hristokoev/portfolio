@@ -4,6 +4,7 @@ subtitle: "A template for After Effects that allows you to unfold a phone screen
 date: "2019-08-01"
 thumb: "/images/unfold-phone/thumb.jpg"
 tags: ["After Effects"]
+category: "Motion Graphics"
 ---
 
 ## Technologies used

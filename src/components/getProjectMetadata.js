@@ -1,17 +1,16 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 
-const getProjectMetadata = (tag) => {
+const getProjectMetadata = (cat) => {
 	const folder = 'src/projects/';
 	const files = fs.readdirSync(folder);
 	let markdownProjects = files.filter((file) => file.endsWith('.md'));
 
-	if (tag) {
+	if (cat) {
 		markdownProjects = markdownProjects.filter((project) => {
 			const fileContents = fs.readFileSync(`${folder}${project}`, 'utf8');
 			const matterResult = matter(fileContents);
-			const tags = matterResult.data.tags.map(tag => tag.toLowerCase().replace(/\s+|\/|\./g, '-'));
-			return tags.includes(tag);
+			return matterResult.data.category.toLowerCase().replace(/\s+|\/|\./g, '-') == cat;
 		});
 	}
 
@@ -29,6 +28,7 @@ const getProjectMetadata = (tag) => {
 			slug: markdownProject.replace('.md', ''),
 			openSource: matterResult.data.openSource,
 			tags: matterResult.data.tags,
+			category: matterResult.data.category,
 		}
 	});
 

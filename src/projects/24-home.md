@@ -4,6 +4,7 @@ subtitle: "Personal store for second hand home appliances."
 date: "2021-03-17"
 thumb: "/images/24-home/thumb.jpg"
 tags: ["WordPress"]
+category: "Web Development"
 ---
 
 ## Technologies used

@@ -1,7 +1,7 @@
 import getProjectMetadata from '@/components/getProjectMetadata';
-import getProjectTags from '@/components/getProjectTags';
+import getProjectCats from '@/components/getProjectCats';
 import ProjectCard from '@/components/projects/preview';
-import TagsList from '@/components/ui/tags-list';
+import Categories from '@/components/ui/categories';
 
 export const metadata = {
 	title: 'Projects',
@@ -9,22 +9,23 @@ export const metadata = {
 }
 
 export const getStaticPaths = async () => {
-	const tags = getProjectTags();
+	const cats = getProjectCats();
+	const paths = [
+		...cats.map((cat) => (
+			{ params: { cat: cat.id, abc: cat.name } }
+		)),
+	];
 	return {
-		paths: tags.map((tag) => ({
-			params: {
-				tag: tag.id,
-			}
-		})),
+		paths,
 		fallback: false,
 	};
 }
 
-export default function TagPage(props) {
+export default function CatPage(props) {
 
-	const tag = props.params.tag;
+	const cat = props.params.cat;
 
-	const projectMetadata = getProjectMetadata(tag).sort((a, b) => {
+	const projectMetadata = getProjectMetadata(cat).sort((a, b) => {
 		return new Date(b.date) - new Date(a.date);
 	});
 
@@ -37,7 +38,7 @@ export default function TagPage(props) {
 
 				<div className="space-y-10">
 
-					<TagsList selectedTag={tag} />
+					<Categories selectedCat={cat} />
 
 					<div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
 

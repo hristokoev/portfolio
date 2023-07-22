@@ -4,6 +4,7 @@ subtitle: "Chrome Extension for Amadeus (OSCAR) - a tool used by CRM agents to b
 date: "2023-05-18"
 thumb: "/images/pretty-oscar/thumb.jpg"
 tags: ["JavaScript", "HTML/CSS"]
+category: "Software Development"
 openSource: true
 ---
 

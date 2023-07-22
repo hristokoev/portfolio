@@ -4,7 +4,14 @@ import ThemeToggle from './theme-toggle'
 export default function Header() {
 	return (
 		<header>
+			{/* Logo */}
+
 			<div className="flex items-center justify-between h-20 before:block">
+				<div className="flex items-center space-x-4">
+					<Link href="/">
+							<div className="font-trueno font-bold text-2xl text-transparent bg-clip-text bg-slate-900 dark:bg-slate-200">K.</div>
+					</Link>
+				</div>
 				<div className="grow flex justify-end space-x-4">
 
 					{/* Links */}

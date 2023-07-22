@@ -1,6 +1,6 @@
 import getProjectMetadata from '@/components/getProjectMetadata';
 import ProjectCard from '@/components/projects/preview';
-import TagsList from '@/components/ui/tags-list';
+import Categories from '@/components/ui/categories';
 
 export const metadata = {
 	title: 'Projects',
@@ -22,7 +22,7 @@ export default function Projects() {
 
 				<div className="space-y-10">
 
-					<TagsList selectedTag="all" />
+					<Categories selectedCat="all" />
 
 					<div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
