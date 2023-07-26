@@ -30,4 +30,4 @@ The social aspect of the school is also very important. I've met a lot of great,
 
 -
 
-_This is a work in progress. I'm planning to add more information about the school, the projects that we do and my experience in general._
+_This article is a work in progress. I'm planning to add more information about the school, the projects that we do and my experience in general._

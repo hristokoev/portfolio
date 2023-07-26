@@ -17,7 +17,7 @@ category: "Web Development"
 
 This is my first NextJS project. It was a bit overdue to have my own website and I've used this opportunity to learn NextJS.
 
-Gotta say, NextJS is pretty awesome. As it's a React framework, it was very easy to switch.
+I have to say, for now, NextJS is pretty awesome. As it's a React framework, it was very easy to switch and I'm impressed how fast it loads.
 
 ### Repository
 
@@ -25,4 +25,4 @@ You can find the repository [here](https://github.com/hristokoev/portfolio/).
 
 ### Further Development
 
-I'm planning to add more projects (that is, if I have more projects to add 😅) and a contact form. Additionally, I need to find a way to update the projects without having to redeploy the website every time.
+I'm planning to add more projects (that is, if I have more projects to add 😅) and a contact form. Additionally, I need to find a way to update the projects without having to redeploy the website every time. More on that later.

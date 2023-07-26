@@ -43,7 +43,7 @@ The main obstacle was actually building the chrome extension and making it all w
 
 Chrome Extensions are generally easy to build, but they do have some additional requirements that you need to be aware of. For example, you need to have a manifest.json file that contains all the information about your extension. You also need to have a background script that runs in the background and listens for events from the browser.
 
-Lastly, I also had to build the extension window, which in itself is a smaller project. I had to build a UI that would allow me to change settings, themes and colors for the highlighted text and then save those to the local storage.
+Lastly, I also had to build the extension window, which in itself was a smaller project. I had to build a UI that would allow me to change settings, themes and colors for the highlighted text and then save those to the local storage.
 
 
 Amadeus with parsed and stylized text | Pretty OSCAR Chrome Extension UI
@@ -58,6 +58,6 @@ You can find the repository [here](https://github.com/hristokoev/pretty-oscar).
 
 ### Further Development
 
-Currently, the extension is used by a couple of selected agents and it's been a great success. I've received a lot of positive feedback and I'm happy that I was able to help my colleagues. However, I'm not sure if I'll be able to continue working on this project, as I'll be no longer working for the company that uses Amadeus. Additionally, it's pretty hard to make changes to the internal workflow, as it's a big company with a lot of bureaucracy. 
+Currently, the extension is used by a couple of selected agents and it's a success. I've received a lot of positive feedback and I'm happy that I was able to help my colleagues. However, I'm not sure if I'll be able to continue working on this project, as I'll be no longer working for the company that uses Amadeus.
 
-In the end, this turned out to be a passion project for me, but while I was working on it, I've learned a lot about JavaScript, Chrome Extensions and Regex. I was also more productive at work, as I was able to quickly see the information I needed. So, it was a win-win in the end. 😁
+In the end, this turned out to be a passion project for me more than anything else, but while I was working on it, I've learned a lot about JavaScript, Chrome Extensions and Regex. Thanks to this extension, I was also more productive at work, since I was able to quickly see the information I needed. 😁

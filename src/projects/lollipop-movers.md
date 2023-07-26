@@ -31,4 +31,4 @@ In reality, this was my first real React project.
 
 For now though, it's a work in progress. Currently I'm developing the admin panel for easier management of the requests.
 
-Seeing the power of NextJS, I'm planning to migrate the website to NextJS.
+Seeing the power of NextJS, next thing on the list is to migrate the website to NextJS.

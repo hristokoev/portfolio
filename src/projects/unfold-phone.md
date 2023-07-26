@@ -21,7 +21,7 @@ category: "Motion Graphics"
 
 This is my first (and only) After Effects template.
 
-There was a time where I wanted to make it as a seller on VideoHive. Turns out, it's a lot of work and after this one, I really started to think twice about it.
+There was a time when I wanted to make it as a seller on VideoHive. Turns out, it's a lot of work and after this project, I really started to think twice about it.
 
 ### Preview
 
