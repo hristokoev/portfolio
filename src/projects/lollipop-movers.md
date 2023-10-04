@@ -3,8 +3,9 @@ title: "Lollipop Movers"
 subtitle: "First React website for a client. A website for a moving company."
 date: "2023-03-01"
 thumb: "/images/lollipop-movers/thumb.jpg"
-tags: ["React", "Tailwind CSS"]
+tags: ["React", "Tailwind CSS", "Astro"]
 category: "Web Development"
+visible: true
 ---
 
 ## Technologies used
@@ -12,6 +13,7 @@ category: "Web Development"
 * React
 * Tailwind CSS
 * Firebase
+* Astro
 
 ### Introduction
 
@@ -29,6 +31,10 @@ In reality, this was my first real React project.
 
 ### Further Development
 
-For now though, it's a work in progress. Currently I'm developing the admin panel for easier management of the requests.
+~~For now though, it's a work in progress. Currently I'm developing the admin panel for easier management of the requests.~~
 
-Seeing the power of NextJS, next thing on the list is to migrate the website to NextJS.
+~~Seeing the power of NextJS, next thing on the list is to migrate the website to NextJS.~~
+
+October 2023: The client reached out to me and asked me to integrate the form with [Privyr](https://www.privyr.com/). This means that I need to handle API requests. I was planning to move everything to NextJS, however, now I believe that to be an overkill. For this static website, I'll be using Astro instead.
+
+Astro is fun. 🎉

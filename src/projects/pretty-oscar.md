@@ -6,6 +6,7 @@ thumb: "/images/pretty-oscar/thumb.jpg"
 tags: ["JavaScript", "HTML/CSS"]
 category: "Software Development"
 openSource: true
+visible: true
 ---
 
 ## Technologies used

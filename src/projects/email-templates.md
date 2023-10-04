@@ -5,6 +5,7 @@ date: "2023-07-01"
 thumb: "/images/email-templates/thumb.jpg"
 tags: ["React", "Firebase", "Tailwind CSS", "AI"]
 category: "Web Development"
+visible: true
 ---
 
 ### Technologies used

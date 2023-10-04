@@ -5,6 +5,7 @@ date: "2020-12-25"
 thumb: "/images/banitsa-kypro/thumb.jpg"
 tags: ["WordPress", "PHP", "JavaScript", "HTML/CSS"]
 category: "Web Development"
+visible: false
 ---
 
 ## Technologies used

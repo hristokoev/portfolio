@@ -5,6 +5,7 @@ date: "2030-01-01"
 thumb: "/images/this.jpg"
 tags: ["Next.js", "Tailwind CSS"]
 category: "Web Development"
+visible: true
 ---
 
 ### Technologies used

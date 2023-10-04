@@ -5,6 +5,7 @@ date: "2021-09-01"
 thumb: "/images/kronosbit/thumb.jpg"
 tags: ["Shopify", "Liquid", "JavaScript", "HTML/CSS", "After Effects"]
 category: "Web Development"
+visible: false
 ---
 
 ## Technologies used

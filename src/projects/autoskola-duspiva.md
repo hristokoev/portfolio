@@ -5,6 +5,7 @@ date: "2021-08-20"
 thumb: "/images/autoskola-duspiva/thumb.jpg"
 tags: ["WordPress"]
 category: "Web Development"
+visible: false
 ---
 
 ## Technologies used

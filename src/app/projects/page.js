@@ -22,12 +22,13 @@ export default function Projects() {
 
 				<div className="space-y-10">
 
-					<Categories selectedCat="all" />
+					{/* WIP */}
+					{/* <Categories selectedCat="all" /> */}
 
 					<div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
 						{projectMetadata.length > 0 ? projectMetadata.map(project => (
-							<ProjectCard key={project.slug} {...project} />
+							project.visible && <ProjectCard key={project.slug} {...project} />
 						)) : (
 							<div className="text-slate-500 dark:text-slate-400">No projects found.</div>
 						)}

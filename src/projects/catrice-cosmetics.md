@@ -5,6 +5,7 @@ date: "2018-03-01"
 thumb: "/images/catrice-cosmetics/thumb.jpg"
 tags: ["After Effects"]
 category: "Motion Graphics"
+visible: true
 ---
 
 ## Technologies used

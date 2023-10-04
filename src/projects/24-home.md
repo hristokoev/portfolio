@@ -5,6 +5,7 @@ date: "2021-03-17"
 thumb: "/images/24-home/thumb.jpg"
 tags: ["WordPress"]
 category: "Web Development"
+visible: false
 ---
 
 ## Technologies used

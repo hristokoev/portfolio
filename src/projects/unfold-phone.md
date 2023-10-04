@@ -5,6 +5,7 @@ date: "2019-08-01"
 thumb: "/images/unfold-phone/thumb.jpg"
 tags: ["After Effects"]
 category: "Motion Graphics"
+visible: true
 ---
 
 ## Technologies used

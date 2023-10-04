@@ -5,6 +5,7 @@ date: "2022-09-01"
 thumb: "/images/nsfw-vangoren/thumb.jpg"
 tags: ["PHP", "JavaScript", "HTML/CSS"]
 category: "Web Development"
+visible: true
 ---
 
 ## Technologies used

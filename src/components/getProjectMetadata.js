@@ -20,6 +20,7 @@ const getProjectMetadata = (cat) => {
 		const fileContents = fs.readFileSync(`${folder}${markdownProject}`, 'utf8');
 		const matterResult = matter(fileContents);
 		return {
+			visible: matterResult.data.visible,
 			title: matterResult.data.title,
 			date: matterResult.data.date,
 			subtitle: matterResult.data.subtitle,
