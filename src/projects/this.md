@@ -10,15 +10,15 @@ visible: true
 
 ### Technologies used
 
-* NextJS (React)
+* Next.js (React)
 * Tailwind CSS
 * Vercel for deployment
 
 ### Introduction
 
-This is my first NextJS project. It was a bit overdue to have my own website and I've used this opportunity to learn NextJS.
+This is my first Next.js project. It was a bit overdue to have my own website and I've used this opportunity to learn Next.js.
 
-I have to say, for now, NextJS is pretty awesome. As it's a React framework, it was very easy to switch and I'm impressed how fast it loads.
+I have to say, for now, Next.js is pretty awesome. As it's a React framework, it was very easy to switch and I'm impressed how fast it loads.
 
 ### Repository
 

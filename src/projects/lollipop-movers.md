@@ -33,8 +33,6 @@ In reality, this was my first real React project.
 
 ~~For now though, it's a work in progress. Currently I'm developing the admin panel for easier management of the requests.~~
 
-~~Seeing the power of NextJS, next thing on the list is to migrate the website to NextJS.~~
+~~Seeing the power of Next.js, next thing on the list is to migrate the website to Next.js.~~
 
-October 2023: The client reached out to me and asked me to integrate the form with [Privyr](https://www.privyr.com/). This means that I need to handle API requests. I was planning to move everything to NextJS, however, now I believe that to be an overkill. For this static website, I'll be using Astro instead.
-
-Astro is fun. 🎉
+October 2023: The client reached out to me and asked me to integrate the form with [Privyr](https://www.privyr.com/). This meants that I had to handle API requests, which was fairly easy. I was planning to move everything to Next.js, however, now I believe that to be an overkill. That's why for this SPA I've used Astro. And Astro is quite fun. 🎉

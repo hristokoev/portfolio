@@ -1,6 +1,6 @@
 ---
 title: "Hlinoteka"
-subtitle: "A NextJS admin/front-end project for a client that sells clay products."
+subtitle: "A Next.js admin/front-end project for a client that sells clay products."
 date: "2023-09-20"
 thumb: "/images/hlinoteka/thumb.jpg"
 tags: ["Next.js", "Tailwind CSS", "MongoDB", "AWS"]
@@ -10,7 +10,7 @@ visible: true
 
 ### Technologies used
 
-* NextJS (React) with TypeScript
+* Next.js (React) with TypeScript
 * Tailwind CSS
 * MongoDB for database
 * AWS (S3) for image storage
@@ -24,9 +24,9 @@ visible: true
 
 ### Development
 
-After receiving the design, my job was to convert the Figma prototype to a funcitoning front-end website. I decided to use NextJS for the front-end and the admin panel, which I had to implement the design for. Thankfully, [cruip](https://cruip.com/) helped bootstrap the much needed admin UI.
+After receiving the design, my job was to convert the Figma prototype to a funcitoning front-end website. I decided to use Next.js for the front-end and the admin panel, which I had to implement the design for. Thankfully, [cruip](https://cruip.com/) helped bootstrap the much needed admin UI.
 
-Soon enough I've realized that this will be a bigger project, as I had to work work with a database, make API calls and use the SSR capabilities of NextJS. As always, I've used Tailwind CSS for the styling. For the database, I've used MongoDB. The images are stored in AWS S3. All of those external services I haven't used before, so it was a great learning experience.
+Soon enough I've realized that this will be a bigger project, as I had to work work with a database, make API calls and use the SSR capabilities of Next.js. As always, I've used Tailwind CSS for the styling. For the database, I've used MongoDB. The images are stored in AWS S3. All of those external services I haven't used before, so it was a great learning experience.
 
 #### 1. Admin panel
 
