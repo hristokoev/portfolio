@@ -43,7 +43,7 @@ const ProjectPage = (props) => {
 					<ProjectTags metadata={[project.data]} />
 				{/* </div> */}
 
-				<article className="prose prose-slate dark:prose-invert max-w-none">
+				<article className="prose prose-invert max-w-none">
 
 					<Markdown>{project.content}</Markdown>
 

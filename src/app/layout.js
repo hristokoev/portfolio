@@ -1,7 +1,6 @@
 import './css/style.css'
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
-import Theme from './theme-provider'
 import Header from '@/components/ui/header'
 import Cta from '@/components/cta'
 
@@ -59,14 +58,13 @@ const trueno = localFont({
 
 export const metadata = {
 	title: 'Hristo Koev - Web Developer & Motion Graphics Artist',
-	description: 'A Web Developer based in Prague',
+	description: 'I\'m a web developer and motion graphics artist based in Prague, Czech Republic. I\'m passionate about creating beautiful and functional websites and animations.',
 }
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={`${inter.variable} ${aspekta.variable} ${trueno.variable} font-inter antialiased bg-white text-slate-800 dark:bg-slate-900 dark:text-slate-200 tracking-tight`}>
-				<Theme>
+			<body className={`${inter.variable} ${aspekta.variable} ${trueno.variable} font-inter antialiased bg-slate-900 text-slate-200 tracking-tight`}>
 					<div className="max-w-7xl mx-auto">
 						<div className="min-h-screen flex">
 
@@ -84,7 +82,6 @@ export default function RootLayout({ children }) {
 						</div>
 					</div>
 					<Cta />
-				</Theme>
 				<Analytics />
 			</body>
 		</html>

@@ -14,7 +14,7 @@ export default function ProjectTags({ metadata, slug }) {
 				{tags.map((tag) => (
 					<li className="m-1" key={tag}>
 						<div
-							className={`inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 duration-150 ease-in-out'}`}
+							className={`inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-slate-700 shadow-sm bg-slate-800 text-slate-400 duration-150 ease-in-out'}`}
 						>
 							{tag}
 						</div>

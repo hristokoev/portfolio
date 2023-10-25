@@ -30,7 +30,7 @@ export default function Projects() {
 						{projectMetadata.length > 0 ? projectMetadata.map(project => (
 							project.visible && <ProjectCard key={project.slug} {...project} />
 						)) : (
-							<div className="text-slate-500 dark:text-slate-400">No projects found.</div>
+							<div className="text-slate-400">No projects found.</div>
 						)}
 
 					</div>

@@ -8,7 +8,7 @@ export default async function WidgetProjects() {
 	});
 
 	return (
-		<div className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 p-5">
+		<div className="rounded-lg border border-slate-800 bg-gradient-to-t from-slate-800 to-slate-800/30 p-5">
 			<div className="font-aspekta font-[650] mb-3">Latest Projects</div>
 			<ul className="space-y-3 flex flex-col">
 				{projectMetadata.slice(0, 5).map((post, postIndex) => (
