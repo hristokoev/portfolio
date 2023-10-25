@@ -1,7 +1,7 @@
 ---
 title: "Hlinoteka"
 subtitle: "A NextJS admin/front-end project for a client that sells clay products."
-date: "2030-01-01"
+date: "2023-09-20"
 thumb: "/images/hlinoteka/thumb.jpg"
 tags: ["Next.js", "Tailwind CSS", "MongoDB", "AWS"]
 category: "Web Development"
